@@ -1,0 +1,37 @@
+# Internship Listing Exporter
+
+A lightweight Python tool that exports internship listings from [Intern List](https://www.intern-list.com/) into a structured CSV.
+
+Intern List dynamically loads listings as you scroll, making it difficult to copy or export the full set of jobs for external analysis. This tool retrieves the underlying structured listing data, paginates through all available results, and combines them into a single CSV that can be filtered, analyzed, or uploaded to tools such as ChatGPT.
+
+## Usage
+
+### 1. Install Requests
+
+```bash
+pip install requests
+```
+
+### 2. Choose your search settings
+
+Open the Python script and edit:
+
+```python
+CATEGORY = "data_analysis"
+LOCATION = []
+OUTPUT_FILE = "internships.csv"
+```
+
+The complete list of supported internship categories is included in the script.
+
+### 3. Run the script
+
+```bash
+python internship_exporter.py
+```
+
+The script will retrieve all available matching listings and save them as a CSV in the `Exported Internships` folder.
+
+## Note
+
+This project relies on the external listing service used by Intern List. Changes to the website, endpoint, or response format may affect functionality.
