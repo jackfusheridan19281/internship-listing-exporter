@@ -18,8 +18,7 @@
 # TECHNICAL EXPLANATION
 #
 # Rather than scraping rendered HTML from the DOM, this script retrieves
-# structured job data from the underlying listing endpoint used by
-# Intern List.
+# structured job data from the underlying listing endpoint used by Intern List.
 #
 # It sends POST requests containing the selected category and optional
 # location filter, then paginates through the results in batches of 50
