@@ -1,0 +1,6 @@
+# Generated internship exports
+Exported Internships/
+
+# Python cache files
+__pycache__/
+*.pyc
